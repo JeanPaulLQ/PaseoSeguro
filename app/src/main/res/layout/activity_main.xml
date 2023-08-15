@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="this is a background patron"
+        android:src="@drawable/grupo_18" />
+
+    <ImageView
+        android:id="@+id/img_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/grupo_17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="38dp"
+        android:background="@color/white"
+        android:hint="Correo"
+        android:padding="0dp"
+        android:textColorHint="@color/principal_color"
+        app:boxStrokeColor="@color/principal_color"
+        app:hintTextColor="@color/principal_color"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_top">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/principal_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:hint="Contraseña"
+        android:padding="0dp"
+        android:textColorHint="@color/principal_color"
+        app:boxStrokeColor="@color/principal_color"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/principal_color"
+        app:layout_constraintTop_toBottomOf="@id/et_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/principal_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/buttons_color"
+        android:fontFamily="@font/robotoregular"
+        android:paddingHorizontal="80dp"
+        android:paddingVertical="16dp"
+        android:text="Ingresar"
+        android:textColor="@color/white"
+        android:textSize="@dimen/min_size"
+        app:layout_constraintEnd_toEndOf="@id/et_pass"
+        app:layout_constraintTop_toBottomOf="@id/et_pass" />
+
+    <TextView
+        android:id="@+id/tv_forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="@color/principal_color"
+        android:textSize="@dimen/micro_size"
+        app:layout_constraintEnd_toEndOf="@id/btn_login"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+    <TextView
+        android:id="@+id/title_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="¿No tienes una cuenta?"
+        android:textColor="@color/principal_color"
+        android:textSize="@dimen/micro_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/robotobold"
+        android:text="Crea una"
+        android:textColor="@color/principal_color"
+        android:textSize="@dimen/micro_size"
+        app:layout_constraintStart_toEndOf="@id/title_msg"
+        app:layout_constraintTop_toTopOf="@id/title_msg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
