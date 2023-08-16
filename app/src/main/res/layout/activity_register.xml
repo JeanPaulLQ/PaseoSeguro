@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/background_color"
     tools:context=".RegisterActivity">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="this is a background patron"
-        android:src="@drawable/back_patron"/>
+        android:src="@drawable/back_patron" />
+
     <TextView
         android:id="@+id/title_register"
         android:layout_width="wrap_content"
@@ -25,9 +27,9 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        app:cardBackgroundColor="@color/white"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,21 +37,25 @@
 
         <LinearLayout
             android:id="@+id/linear1"
-            android:paddingVertical="32dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingVertical="32dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                android:hint="Nombre de usuario">
+                android:hint="Nombre de usuario"
+                android:textColorHint="@color/principal_color"
+                app:boxStrokeColor="@color/principal_color"
+                app:hintTextColor="@color/principal_color">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:textColor="@color/principal_color" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -57,12 +63,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="16dp"
-                android:hint="Correo electronico">
+                android:hint="Correo electronico"
+                android:textColorHint="@color/principal_color"
+                app:boxStrokeColor="@color/principal_color"
+                app:hintTextColor="@color/principal_color">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/principal_color" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -70,12 +80,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="16dp"
-                android:hint="Nombre de Mascota">
+                android:hint="Nombre de Mascota"
+                android:textColorHint="@color/principal_color"
+                app:boxStrokeColor="@color/principal_color"
+                app:hintTextColor="@color/principal_color">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textCapWords" />
+                    android:inputType="textCapWords"
+                    android:textColor="@color/principal_color" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -84,12 +98,16 @@
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="16dp"
                 android:hint="Contraseña"
-                app:endIconMode="password_toggle">
+                android:textColorHint="@color/principal_color"
+                app:boxStrokeColor="@color/principal_color"
+                app:endIconMode="password_toggle"
+                app:hintTextColor="@color/principal_color">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:textColor="@color/principal_color" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -97,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="16dp"
-                android:hint="Seleccionar foto de mascota (Opcial)">
+                android:hint="Seleccionar foto de mascota (Opcional)">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -109,6 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal">
 
                 <CheckBox
@@ -118,6 +137,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/principal_color"
                     android:text="Acepta los terminos y condiciones" />
             </LinearLayout>
 
@@ -126,10 +146,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="16dp"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/buttons_color"
                 android:paddingVertical="16dp"
                 android:text="Registrar"
+                android:textColor="@color/white"
                 android:textSize="@dimen/min_size" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

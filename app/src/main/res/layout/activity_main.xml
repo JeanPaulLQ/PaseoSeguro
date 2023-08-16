@@ -58,8 +58,8 @@
         android:padding="0dp"
         android:textColorHint="@color/principal_color"
         app:boxStrokeColor="@color/principal_color"
-        app:endIconMode="clear_text"
         app:hintTextColor="@color/principal_color"
+        app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@id/et_email">
 
         <com.google.android.material.textfield.TextInputEditText

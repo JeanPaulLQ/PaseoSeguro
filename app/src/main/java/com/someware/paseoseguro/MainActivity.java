@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvCreateAccount,tvForgotPass;
     EditText email,pass;
     Button btnLogin;
+    private String strEmail,password;
     Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +31,13 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(MainActivity.this, RegisterActivity.class);
             startActivity(intent);
         });
+        btnLogin = binding.btnLogin;
+        btnLogin.setOnClickListener(v->{
+            intent = new Intent(MainActivity.this, BottomBarActivity.class);
+            startActivity(intent);
+        });
+    }
+    private void login(){
+
     }
 }
